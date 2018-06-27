@@ -1,5 +1,7 @@
 # browserify-simple-example
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/browserify-simple-example.svg)](https://greenkeeper.io/)
+
 An example setup of browserify that uses `require()`
 
 To use this repo:
