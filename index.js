@@ -1,16 +1,12 @@
 // index.js
-const StacheElement = require("can-stache-element");
+var Component = require("can-component");
 
-class MyApp extends StacheElement {
-  static get view() {
-    return `<h1>{{message}}</h1>`;
+Component.extend({
+  tag: "my-app",
+  view: "<h1>{{message}}</h1>",
+  ViewModel: {
+    message: {
+      default: "Hello World"
+    }
   }
-  
-  static get props() {
-    return {
-      message: "Hello World"
-    };
-  }
-}
-
-customElements.define("my-app", MyApp);
+});
